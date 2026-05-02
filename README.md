@@ -133,6 +133,7 @@ SSH
 JNLP
 WebSocket
 🚀 Jenkins Agents – Theory & Key Points to Remember
+
 1️⃣ What is a Jenkins Agent?
 A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkins Controller and executes build jobs.
 
@@ -141,9 +142,12 @@ A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkin
 👉 Used for distributed builds, scalability, and workload separation.
 
 2️⃣ Why Jenkins Agents are Needed?
+
 ✔️ Parallel builds ✔️ Load distribution ✔️ Different OS environments (Linux/Windows/macOS) ✔️ Tool-specific environments (Java, Docker, Node, etc.) ✔️ Isolate heavy workloads ✔️ Secure production deployments
 
 3️⃣ Jenkins Architecture (Controller + Agents)
+
+
              +------------------+
              |  Jenkins         |
              |  Controller      |
@@ -155,6 +159,8 @@ A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkin
 | Linux Agent |  | Windows     |  | Docker      |
 | (Build)     |  | Agent       |  | Agent       |
 +-------------+  +-------------+  +-------------+
+
+
 
 4️⃣ Types of Jenkins Agents
 🔹 1. Permanent Agent (Static Agent)
