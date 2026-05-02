@@ -93,13 +93,20 @@ pipeline {
 -----------
 
 🔹 Jenkins
+
+
 🔹 What is Jenkins?
+
+
 Open-source Automation Server
 Used for CI/CD (Continuous Integration & Continuous Deployment)
 Written in Java
 Supports plugins-based architecture
 Runs as standalone (WAR), service, Docker container
+
+
 🔹 Core Concepts
+
 🔹 CI (Continuous Integration)
 Developers push code to Git
 
@@ -109,12 +116,16 @@ Pulls code
 Builds
 Tests
 Generates reports
+
+
 🔹 CD (Continuous Delivery/Deployment)
 Automates:
 
 Packaging
 Deployment to Dev/Test/Prod
 Infrastructure provisioning
+
+
 🔹 Jenkins Architecture
 Master (Controller)
 
@@ -134,6 +145,7 @@ JNLP
 WebSocket
 🚀 Jenkins Agents – Theory & Key Points to Remember
 
+
 1️⃣ What is a Jenkins Agent?
 A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkins Controller and executes build jobs.
 
@@ -141,11 +153,16 @@ A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkin
 
 👉 Used for distributed builds, scalability, and workload separation.
 
+
 2️⃣ Why Jenkins Agents are Needed?
 
 ✔️ Parallel builds ✔️ Load distribution ✔️ Different OS environments (Linux/Windows/macOS) ✔️ Tool-specific environments (Java, Docker, Node, etc.) ✔️ Isolate heavy workloads ✔️ Secure production deployments
 
+
 3️⃣ Jenkins Architecture (Controller + Agents)
+
+
+
 
 
              +------------------+
@@ -159,6 +176,9 @@ A Jenkins Agent (formerly called Slave) is a machine that connects to the Jenkin
 | Linux Agent |  | Windows     |  | Docker      |
 | (Build)     |  | Agent       |  | Agent       |
 +-------------+  +-------------+  +-------------+
+
+
+
 
 
 
@@ -178,10 +198,16 @@ Clean environment every build
 Uses Pod as agent
 Very scalable
 Common in DevOps pipelines
+
+
 5️⃣ Agent Communication Methods
+
 ✔️ SSH (Linux) ✔️ Windows Service ✔️ JNLP (Java Web Start) ✔️ Kubernetes plugin ✔️ Docker plugin
 
+
+
 6️⃣ Important Terminologies
+
 Term	Meaning
 Node	Machine configured in Jenkins
 Agent	Worker node
@@ -190,7 +216,9 @@ Label	Tag used to target specific agent
 Workspace	Directory where build runs
 
 
+
 7️⃣ Jenkinsfile Example Using Agent
+
 Declarative Pipeline
 
 pipeline {
